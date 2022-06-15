@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
@@ -51,6 +50,7 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <p>github action!</p>
           <nav>
             <Link href="/about">
               <a>About</a>
@@ -65,10 +65,7 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          Powered by <span className={styles.logo}></span>
         </a>
       </footer>
     </div>
